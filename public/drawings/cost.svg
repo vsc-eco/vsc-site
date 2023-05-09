@@ -1,0 +1,16 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460.3748917788174 222.33685412987137" width="460.3748917788174" height="222.33685412987137">
+  <!-- svg-source:excalidraw -->
+  
+  <defs>
+    <style class="style-fonts">
+      @font-face {
+        font-family: "Virgil";
+        src: url("https://excalidraw.com/Virgil.woff2");
+      }
+      @font-face {
+        font-family: "Cascadia";
+        src: url("https://excalidraw.com/Cascadia.woff2");
+      }
+    </style>
+  </defs>
+  <g stroke-linecap="round"><g transform="translate(14.362974664559601 19.0222125440836) rotate(0 -2.1309453636361297 95.15201835690998)"><path d="M0.1 0.22 C-0.5 32.03, -2.62 158.07, -3.27 190 M-1.3 -0.71 C-2.12 31.3, -4.36 159.25, -4.36 191.01" stroke="#ffffff" stroke-width="1" fill="none"></path></g><g transform="translate(14.362974664559601 19.0222125440836) rotate(0 -2.1309453636361297 95.15201835690998)"><path d="M-13.96 162.26 C-12.93 170.64, -6.68 183.19, -4.91 189.78 M-14.91 162.01 C-12.34 169.88, -8.22 179.45, -4.11 190.71" stroke="#ffffff" stroke-width="1" fill="none"></path></g><g transform="translate(14.362974664559601 19.0222125440836) rotate(0 -2.1309453636361297 95.15201835690998)"><path d="M6.56 162.47 C0.86 170.8, 0.38 183.28, -4.91 189.78 M5.61 162.22 C2.4 170.14, 0.73 179.65, -4.11 190.71" stroke="#ffffff" stroke-width="1" fill="none"></path></g></g><mask></mask><g transform="translate(43.3629746645596 88.0222125440836) rotate(0 41.50798797607422 22.5)"><text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#ffffff" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Cost</text></g><g stroke-linecap="round"><g transform="translate(267.3629746645596 211.0222125440836) rotate(0 0.6953508009684128 -99.85378547914792)"><path d="M0.91 -0.85 C1.02 -34.28, 1.24 -167.66, 1.52 -201.02 M-0.07 1.31 C-0.24 -31.87, -0.04 -165.99, 0.32 -199.5" stroke="#ffffff" stroke-width="1" fill="none"></path></g><g transform="translate(267.3629746645596 211.0222125440836) rotate(0 0.6953508009684128 -99.85378547914792)"><path d="M9.01 -172.05 C6.76 -180.69, 3 -190.9, 1.25 -200.51 M10.45 -170.59 C8.49 -177.71, 6.29 -183.99, 0.99 -199.39" stroke="#ffffff" stroke-width="1" fill="none"></path></g><g transform="translate(267.3629746645596 211.0222125440836) rotate(0 0.6953508009684128 -99.85378547914792)"><path d="M-11.51 -172.16 C-6.15 -180.92, -2.29 -191.08, 1.25 -200.51 M-10.07 -170.7 C-7.42 -177.91, -5 -184.16, 0.99 -199.39" stroke="#ffffff" stroke-width="1" fill="none"></path></g></g><mask></mask><g transform="translate(300.3629746645596 87.0222125440836) rotate(0 75.0059585571289 22.5)"><text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#ffffff" text-anchor="start" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">Usability</text></g></svg>

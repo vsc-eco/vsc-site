@@ -1,0 +1,10 @@
+
+.logo {
+  width: 50px;
+}
+
+.navbar-wrapper {
+  position: fixed;
+  width: 99vw;
+  z-index: 9999;
+}
