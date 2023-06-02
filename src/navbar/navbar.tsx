@@ -85,7 +85,7 @@ export default function WithSubnavigation(props: { fixed: boolean }) {
                         display={{ base: "none", md: "inline-flex" }}
                         fontSize={"sm"}
                         fontWeight={600}
-                        href={"https://pl8tinium.github.io/"}  // Pla: adjust
+                        href={"https://vsc-eco.github.io/"}  // Pla: adjust
                     >
                         Docs
                     </Button>
@@ -134,7 +134,7 @@ const DesktopNav = () => {
 const getMobileNavItems = () => {
     return [NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
-    )), <MobileNavItem key={"Docs"} {...{label: "Docs", href: "https://pl8tinium.github.io/"}} />]  // Pla: adjust
+    )), <MobileNavItem key={"Docs"} {...{label: "Docs", href: "https://vsc-eco.github.io/"}} />]  // Pla: adjust
 }
 
 const MobileNav = () => {
