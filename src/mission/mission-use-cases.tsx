@@ -11,7 +11,7 @@ const section: SimpleSection = {
     header: 'New use cases',
     textSections: [
         "VSC will power the next generation of NFTs, games, cross chain transfers, DEXs and use cases not previously thought of.",
-        "Smart contracts will be able to utilize a range of APIs from basic read/write APIs to broadcasting on chain operations based on off chain data."],
+        "Smart contracts will be able to utilize a range of APIs from basic read/write APIs for modifying state to interacting with advanced on chain operations."],
 }
 
 const MissionUseCases = () => (

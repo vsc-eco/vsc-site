@@ -1,5 +1,7 @@
 .landing-container {
-    background-image: url('https://api.starlink.com/public-files/Marketing_LandingFeatured_Redesign.webp');
+    background-image: url('https://ipfs.3speak.tv/ipfs/QmbBW6L2NUbAnRvnGR3WBiTb7Eu8aCsi4nCsV36kjSaA6');
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
 }
 

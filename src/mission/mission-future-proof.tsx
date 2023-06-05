@@ -11,7 +11,7 @@ const section: SimpleSection = {
     header: 'Future proof',
     textSections: [
         "From being a layer 2 solution, VSC can rapidly adapt to new technology as it becomes available.",
-        "With the addition of pluggable consensus modules, consensus can be easily upgraded across all nodes without the need for a restart."],
+        "With the addition of pluggable consensus modules, consensus can be easily upgraded across all nodes without the need for a large upgrade. Pending approval via voting of course."],
 }
 
 const MissionFutureProof = () => (
