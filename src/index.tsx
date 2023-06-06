@@ -12,6 +12,8 @@ import Scalability from "./details/details";
 import Details from "./details/details";
 import { extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
+import { Analytics } from '@vercel/analytics/react';
+
 
 const theme = extendTheme(
   {
@@ -38,6 +40,7 @@ export default class App extends React.Component {
                 <Route path="*" element={<Mission />} />
               </Routes>
             </div>
+            <Analytics />
           </BrowserRouter>
         </ChakraProvider>
       // </React.StrictMode>
