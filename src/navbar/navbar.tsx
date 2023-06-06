@@ -124,7 +124,7 @@ const DesktopNav = () => {
     return (
         <Stack direction={"row"} spacing={4}>
             {getDesktopNavItem(NAV_ITEMS.slice(0, 1)[0])}
-            <Stack direction={"row"} style={{ outlineWidth: "1px", outlineStyle: "solid", outlineColor: "inherit", outlineOffset: "7px"}}>
+            <Stack direction={"row"} style={{ /*outlineWidth: "1px", outlineStyle: "solid", outlineColor: "inherit", outlineOffset: "7px"*/ }}>
                 {NAV_ITEMS.slice(1).map(getDesktopNavItem)}
             </Stack>
         </Stack>
