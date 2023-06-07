@@ -6,7 +6,7 @@ import MissionLanding from "./mission/mission-landing";
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
 import { ChakraProvider, useColorMode, withDefaultColorScheme } from "@chakra-ui/react";
 import FullpageTest from "./general-components/fullpage";
-import Topbar from "./navbar/navbar";
+import Topbar from "./general-components/navbar/navbar";
 import Mission from "./mission/mission";
 import Scalability from "./details/details";
 import Details from "./details/details";

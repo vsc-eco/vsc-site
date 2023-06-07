@@ -6,6 +6,8 @@ import { useColorMode } from "@chakra-ui/react";
 import MissionFutureProof from "./mission-future-proof";
 import MissionUseCases from "./mission-use-cases";
 import MissionScalable from "./mission-scalable";
+import MissionPoweredBy from "./mission-powered-by";
+import MissionPeople from "./mission-people";
 
 const InputComponents = () => (
     <>
@@ -14,6 +16,8 @@ const InputComponents = () => (
         <MissionScalable/>
         <MissionUseCases/>
         <MissionFutureProof/>
+        <MissionPoweredBy/>
+        <MissionPeople/>
     </>
 );
 
@@ -27,7 +31,7 @@ const Mission = () => {
     })
 
     return(
-    <FullpageWrapper InputComponents={InputComponents} anchors={['', 'introduction', 'scalable', 'practicability', 'future-proof']}/>
+    <FullpageWrapper InputComponents={InputComponents} anchors={['', 'introduction', 'scalable', 'practicability', 'future-proof', 'powered-by', 'people']}/>
 )};
   
 export default Mission;
