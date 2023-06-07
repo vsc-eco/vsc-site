@@ -40,6 +40,10 @@ const NAV_ITEMS: Array<NavItem> = [
         label: "Contracts",
         href: "/details#contracts",
     },
+    {
+        label: "Links",
+        href: "https://linktr.ee/vsc.network",
+    },
 ];
 
 export default function WithSubnavigation(props: { fixed: boolean }) {
