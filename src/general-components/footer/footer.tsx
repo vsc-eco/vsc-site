@@ -10,7 +10,7 @@ import {
     VisuallyHidden,
     VStack,
   } from '@chakra-ui/react';
-  import { FaTwitter, FaYoutube, FaInstagram, FaDiscord, FaRss } from 'react-icons/fa';
+  import { FaTwitter, FaYoutube, FaInstagram, FaDiscord, FaRss, FaGithub } from 'react-icons/fa';
   import { ReactNode } from 'react';
 import React from 'react';
 import DetailsSection from '../../details/details-section';
@@ -84,8 +84,11 @@ import { headerConvert } from '../../utils';
             <SocialButton label={'PeakD'} href={'https://peakd.com/@vsc.network'}>
               <FaRss />
             </SocialButton>
-            <SocialButton label={'Discord'} href={'https://discord.gg/CpcFgp7J'}>
+            <SocialButton label={'Discord'} href={'https://discord.gg/yvGXZsQTU6'}>
               <FaDiscord />
+            </SocialButton>
+            <SocialButton label={'Github'} href={'https://github.com/vsc-eco'}>
+              <FaGithub />
             </SocialButton>
           </Stack>
         </Container>
