@@ -40,7 +40,7 @@ const MissionPeople = () => (
                     <br/>
                     <Text>Do you think a cooperation could be beneficial? Get in contact with us!</Text>
                     <br/>
-                    <Link href="https://discord.gg/CpcFgp7J"><Image width={"100px;"}  src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg"/></Link>
+                    <Link href="https://discord.gg/yvGXZsQTU6"><Image width={"100px;"}  src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg"/></Link>
                     <br/>
                     <br/>
                     <Divider borderColor='gray.200' />
