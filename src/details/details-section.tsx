@@ -1,6 +1,7 @@
 import { Divider, Heading, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import { SimpleSection } from "../models/SimpleSection";
+import { headerConvert } from "../utils";
 
 const DetailsSection = (props: { section: SimpleSection}) => { 
     const subSections = [];
@@ -16,7 +17,7 @@ const DetailsSection = (props: { section: SimpleSection}) => {
 
     return(
     <VStack alignContent={'left'}>
-       <Heading alignSelf={"baseline"} id={props.section.id ?? props.section.header}>{props.section.header}</Heading>
+       <Heading alignSelf={"baseline"} id={props.section.id ?? headerConvert(props.section.header)}>{props.section.header}</Heading>
        {subSections}
     </VStack>
 )};

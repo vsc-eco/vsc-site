@@ -3,18 +3,19 @@ import React, { useEffect, useState } from 'react';
 import { Text } from '@chakra-ui/react'
 import './split-display.css'
 import { SimpleSection } from '../../models/SimpleSection';
+import { headerConvert } from '../../utils';
 
 export const HalfpageDisplay = (props: {section: SimpleSection, linkedDoc?: string}) => { 
 
     const subSections = [];
     // iterate over section.textSections and add them to subSections, but insert a <br/> between each in one line
     for (let i = 0; i < props.section.textSections.length; i++) {
-        subSections.push(<Text textAlign="left" fontSize='lg'>{props.section.textSections[i]}</Text>)
+        subSections.push(<Text key={i} textAlign="left" fontSize='lg'>{props.section.textSections[i]}</Text>)
     }
 
     return(
     <Box className='split-text'>
-        <Heading id={props.section.id ?? props.section.header}>{props.section.header}</Heading>
+        <Heading>{props.section.header}</Heading>
         {subSections}
         {props.linkedDoc !== undefined &&
             <Link

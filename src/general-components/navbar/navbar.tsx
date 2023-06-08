@@ -22,7 +22,7 @@ import {
     ChevronRightIcon,
 } from "@chakra-ui/icons";
 import React from "react";
-import NavItem from "../models/NavItem";
+import NavItem from "../../models/NavItem";
 import './navbar.css';
 
 //pla: this example was used https://chakra-templates.dev/navigation/navbar
@@ -33,12 +33,12 @@ const NAV_ITEMS: Array<NavItem> = [
         href: "/",
     },
     {
-        label: "Scalability",
-        href: "/details#scalability",
-    },
-    {
         label: "Contracts",
         href: "/details#contracts",
+    },
+    {
+        label: "Scalability",
+        href: "/details#scalability",
     },
     {
         label: "Links",
@@ -89,7 +89,7 @@ export default function WithSubnavigation(props: { fixed: boolean }) {
                         display={{ base: "none", md: "inline-flex" }}
                         fontSize={"sm"}
                         fontWeight={600}
-                        href={"https://vsc-eco.github.io/"}  // Pla: adjust
+                        href={"https://vsc-eco.github.io/"}
                     >
                         Docs
                     </Button>
@@ -138,7 +138,7 @@ const DesktopNav = () => {
 const getMobileNavItems = () => {
     return [NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
-    )), <MobileNavItem key={"Docs"} {...{label: "Docs", href: "https://vsc-eco.github.io/"}} />]  // Pla: adjust
+    )), <MobileNavItem key={"Docs"} {...{label: "Docs", href: "https://vsc-eco.github.io/"}} />]
 }
 
 const MobileNav = () => {

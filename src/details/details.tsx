@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
-import Navbar from "../navbar/navbar";
+import Navbar from "../general-components/navbar/navbar";
 import { Heading, Stack, StackDivider, VStack, useColorMode, Image, HStack, Grid, GridItem, Divider } from "@chakra-ui/react";
 import DetailsSection from "./details-section";
 import { simpleSections } from "./details-sections";
 import { CopyBlock, a11yLight, railscast } from "react-code-blocks";
 import { ViewIcon } from "@chakra-ui/icons";
+import Footer from "../general-components/footer/footer";
 
 
 const basicContract: string = `
@@ -115,8 +116,8 @@ const Details = () => {
                         <Image src="drawings/cost.svg"/>
                         <DetailsSection section={simpleSections.feelessSmartContractOperation}/>
                     </Grid>
-                    <br/>
             </VStack>
+            <Footer fixed={false}/>
         </VStack>
     );
 }  
