@@ -21,7 +21,7 @@ const MissionPeople = () => (
         <div className="slide wrapup-container">
             <VStack justifyContent={""} spacing={"5"}>
                 <>
-                    <Heading>Partnerships</Heading>
+                    <Heading size='3xl'>Partnerships</Heading>
                     <br/>
                     <Text>Do you think a cooperation could be beneficial? Get in contact with us!</Text>
                     <br/>
@@ -31,11 +31,11 @@ const MissionPeople = () => (
                     <Divider borderColor='gray.200' />
                 </>
                 <>
-                    <Heading>Our Team</Heading>
+                    <Heading size='3xl'>Our Team</Heading>
                     <br/>
                     <HStack spacing={"10"}>
-                        <VStack><Link href="https://github.com/vaultec81"><Image width={"85px;"} borderRadius={"50%"} src="https://github.com/vaultec81.png?size=460"/></Link><Text>Vaultec81</Text></VStack>
-                        <VStack><Link href="https://github.com/Pl8tinium"><Image width={"85px;"} borderRadius={"50%"} src="https://github.com/pl8tinium.png?size=460"/></Link><Text>Platinium</Text></VStack>
+                        <VStack><Link href="https://github.com/vaultec81"><Image width={"150px;"} borderRadius={"50%"} src="https://github.com/vaultec81.png?size=460"/></Link><Text>Vaultec81</Text></VStack>
+                        <VStack><Link href="https://github.com/Pl8tinium"><Image width={"150px;"} borderRadius={"50%"} src="https://github.com/pl8tinium.png?size=460"/></Link><Text>Platinium</Text></VStack>
                     </HStack>
                 </>
             </VStack>

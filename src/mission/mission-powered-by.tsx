@@ -17,15 +17,21 @@ const section: SimpleSection = {
 const MissionPoweredBy = () => (
     <div className='custom-section p-container'>
         <div className="slide">
-            <Box display={"grid"} gridTemplateColumns={"50% 50%"}>
-                <VStack justifyContent={"space-evenly"}>
-                    <Image height={"200px"} src="https://upload.wikimedia.org/wikipedia/commons/1/18/Ipfs-logo-1024-ice-text.png"></Image>
-                    <Image height={"200px"} src="https://cryptologos.cc/logos/hive-blockchain-hive-logo.png"></Image>
+            {/* <Box display={"grid"} gridTemplateColumns={"50% 50%"}> */}
+                <VStack justify={"center"} align={"center"} height={"100vh"}>
+                    <Heading size='3xl'>{section.header}</Heading>
+                    <br/>
+                    <br/>
+                    <Text>{section.textSections}</Text>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <HStack spacing={"10"} justifyContent={"space-evenly"}>
+                        <Image height={"300px"} src="https://upload.wikimedia.org/wikipedia/commons/1/18/Ipfs-logo-1024-ice-text.png"></Image>
+                        <Image height={"300px"} src="https://cryptologos.cc/logos/hive-blockchain-hive-logo.png"></Image>
+                    </HStack>
                 </VStack>
-                <Box height={"100vh"}>
-                    <HalfpageDisplay section={section} linkedDoc={linkedDoc}></HalfpageDisplay>
-                </Box>
-            </Box>
+            {/* </Box> */}
 
         </div>
     </div>

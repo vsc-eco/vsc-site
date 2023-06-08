@@ -10,7 +10,7 @@ import {
     VisuallyHidden,
     VStack,
   } from '@chakra-ui/react';
-  import { FaTwitter, FaYoutube, FaInstagram, FaDiscord } from 'react-icons/fa';
+  import { FaTwitter, FaYoutube, FaInstagram, FaDiscord, FaRss } from 'react-icons/fa';
   import { ReactNode } from 'react';
 import React from 'react';
 import DetailsSection from '../../details/details-section';
@@ -69,20 +69,21 @@ import { headerConvert } from '../../utils';
             <Logo/>
             <Text>VSC © 2023</Text>
           </HStack>
+          <VStack spacing={1}>
+            <Link href={''}>The Mission</Link>
+            <Link href={'https://vsc-eco.github.io/'}>Docs</Link>
+          </VStack>
+          <VStack spacing={1}>
+            <Link href={'details#contracts'}>Contracts</Link>
+            <Link href={'details#scalability'}>Scalability</Link>
+          </VStack>
           <Stack direction={'row'} spacing={6}>
-            <Link href={'http://localhost:3000/details#contracts'}>Contracts</Link>
-            <Link href={'http://localhost:3000/details#scalability'}>Scalability</Link>
-            {/* examples, need to be replaced with practical links */}
-            <Link href={'details#' + headerConvert(simpleSections.smartContractsOffchainJsCode.header)}>JS Smart contracts</Link>
-            <Link href={'details#' + headerConvert(simpleSections.groupOfValidators.header)}>Valitators</Link>
-          </Stack>
-          <Stack direction={'row'} spacing={6}>
-            {/* <SocialButton label={'Twitter'} href={'#'}>
+            <SocialButton label={'Twitter'} href={'https://twitter.com/vsc_eco'}>
               <FaTwitter />
-            </SocialButton> */}
-            {/* <SocialButton label={'YouTube'} href={'#'}>
-              <FaYoutube />
-            </SocialButton> */}
+            </SocialButton>
+            <SocialButton label={'PeakD'} href={'https://peakd.com/@vsc.network'}>
+              <FaRss />
+            </SocialButton>
             <SocialButton label={'Discord'} href={'https://discord.gg/CpcFgp7J'}>
               <FaDiscord />
             </SocialButton>
