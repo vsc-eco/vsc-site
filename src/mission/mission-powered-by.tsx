@@ -27,8 +27,12 @@ const MissionPoweredBy = () => (
                     <br/>
                     <br/>
                     <HStack spacing={"10"} justifyContent={"space-evenly"}>
-                        <Image height={"300px"} src="https://upload.wikimedia.org/wikipedia/commons/1/18/Ipfs-logo-1024-ice-text.png"></Image>
-                        <Image height={"300px"} src="https://cryptologos.cc/logos/hive-blockchain-hive-logo.png"></Image>
+                        <a href="https://ipfs.tech" target="_blank">
+                            <Image height={"300px"} src="https://upload.wikimedia.org/wikipedia/commons/1/18/Ipfs-logo-1024-ice-text.png"></Image>
+                        </a>
+                        <a href="https://hive.io" target="_blank">
+                            <Image height={"300px"} src="https://cryptologos.cc/logos/hive-blockchain-hive-logo.png"></Image>
+                        </a>
                     </HStack>
                 </VStack>
             {/* </Box> */}
