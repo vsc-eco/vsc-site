@@ -7,7 +7,6 @@ import { CopyBlock, a11yLight, railscast } from "react-code-blocks";
 import { ViewIcon } from "@chakra-ui/icons";
 import Footer from "../general-components/footer/footer";
 
-
 const basicContract: string = `
 actions.init = async () => {
     await state.update('test', {
@@ -23,6 +22,13 @@ actions.set = async ({key, value}) => {
 }
 `
 
+const DividerWithSpace = () => { return <>
+    <br/>
+    <br/>
+    <Divider borderColor='gray.200' />
+    <br/>
+    <br/>
+</>}
 
 const Details = () => { 
     const { colorMode, toggleColorMode } = useColorMode()
@@ -45,77 +51,57 @@ const Details = () => {
             <Navbar fixed={false}/>
             <VStack 
                 alignSelf={"center"}
-                width={"60vw"}
+                width={{ base: '100vw', lg: '60vw' }}
                 className="details-container"
-                spacing={10}
-                align='stretch'>
-                    <Heading as='h1' size='3xl' id="contracts">Contracts</Heading>
-
-                    <Grid templateColumns='60% auto' templateRows='100%' gap={10}>
-                        <DetailsSection section={simpleSections.smartContractsOffchainJsCode}/>
-                        <VStack gap={12}>
-                            <Image height={'25%'} src="js.png"/>
-                            <CopyBlock
-                                text={basicContract}
-                                language={'jsx'}
-                                showLineNumbers={false}
-                                wrapLines
-                                theme={	railscast}
-                            />
-                        </VStack>
-                    </Grid>
-                    <Divider borderColor='gray.200' />
-
-                    <Grid templateColumns='auto 60%' templateRows='100%' gap={10}>
-                        <Image src="drawings/multisig.svg"/>
-                        <DetailsSection section={simpleSections.smartContractControlledMultisigs}/>
-                    </Grid>
-                    <Divider borderColor='gray.200' />
+                align='baseline'>
+                    <Heading as='h1' size={{ base: '4xl', lg: '3xl' }}  id="contracts">Contracts</Heading>
                     <br/>
                     <br/>
-                    
+                    <DetailsSection widthDesktop={60} section={simpleSections.smartContractsOffchainJsCode} presentedItems={{
+                        0: <Image width={'50%'} src="js.png"/>,
+                        2: <CopyBlock
+                            width={'50%'}
+                            text={basicContract}
+                            language={'jsx'}
+                            showLineNumbers={false}
+                            wrapLines
+                            theme={	railscast }/>
+                    }}/>
+                    <DividerWithSpace/>
+
+                    <DetailsSection widthDesktop={60} imageOnTheLeft={false} section={simpleSections.smartContractControlledMultisigs} presentedItems={{
+                        0: <Image width={'100%'} src="drawings/multisig.svg"/>
+                    }}/>
+                    <DividerWithSpace/>
+
+                                        
                     <Heading as='h1' size='3xl' id="scalability">Scalability</Heading>
+                    <br/>
+                    <br/>
+                    <DetailsSection widthDesktop={0} section={simpleSections.groupOfValidators} presentedItems={{
+                        1: <Image width={'100%'} src="drawings/executors.svg"/>
+                    }}/>
+                    <DividerWithSpace/>
 
-                    <Grid templateColumns='auto 40%' templateRows={'30% auto'} columnGap={10}>
-                        <GridItem rowStart={2}>
-                            <Image src="drawings/executors.svg"/>
-                        </GridItem>
-                        <GridItem rowSpan={3}>
-                            <DetailsSection section={simpleSections.groupOfValidators}/>
-                        </GridItem>
-                    </Grid>
-                    <Divider borderColor='gray.200' />
+                    <DetailsSection widthDesktop={100} section={simpleSections.ipfsStateAndTransactions}/>
+                    <Image width={'100%'} src="ipfs.png"/>
+                    <DividerWithSpace/>
 
-                    <DetailsSection section={simpleSections.ipfsStateAndTransactions}/>
-                    <Image src="ipfs.png"/>
-                    <Divider borderColor='gray.200' />
+                    <DetailsSection widthDesktop={50} section={simpleSections.highlyScalableDataStructures} presentedItems={{
+                        0: <Image width={'100%'} src="drawings/scalability.svg"/>,
+                        1: <Image width={'80%'} src="drawings/dag.svg"/>,
+                        3: <Image width={'100%'} src="drawings/merkle.svg"/>
+                    }}/>
+                    <DividerWithSpace/>
 
-                    <Grid templateColumns='auto 50%' templateRows={'20% 20% 20% auto'} columnGap={10} rowGap={5}>
-                        <GridItem rowStart={1}>
-                            <Image src="drawings/scalability.svg"/>
-                        </GridItem>
-                        <GridItem rowStart={2}>
-                            <Image src="drawings/dag.svg"/>
-                        </GridItem>
-                        <GridItem rowStart={4}>
-                            <Image src="drawings/merkle.svg"/>
-                        </GridItem>
-                        <GridItem rowSpan={4}>
-                            <DetailsSection section={simpleSections.highlyScalableDataStructures}/>
-                        </GridItem>
-                    </Grid>
-                    <Divider borderColor='gray.200' />
+                    <DetailsSection widthDesktop={70} section={simpleSections.witnessesKeepTrackMultisig} presentedItems={{
+                        0: <ViewIcon boxSize={"15em"}></ViewIcon>
+                    }}/>
+                    <DividerWithSpace/>
 
-                    <Grid templateColumns='70% auto' templateRows={'30% auto'} columnGap={10}>
-                        <DetailsSection section={simpleSections.witnessesKeepTrackMultisig}/>
-                        <ViewIcon boxSize={"15em"}></ViewIcon>
-                    </Grid>
-                    <Divider borderColor='gray.200' />
-
-                    <Grid templateColumns='auto 60%' templateRows={'30% auto'} columnGap={10}>
-                        <Image src="drawings/cost.svg"/>
-                        <DetailsSection section={simpleSections.feelessSmartContractOperation}/>
-                    </Grid>
+                    <DetailsSection widthDesktop={60} section={simpleSections.feelessSmartContractOperation} presentedItems={{
+                        0: <Image width={'100%'} src="drawings/cost.svg"/>
+                    }}/>
             </VStack>
             <Footer fixed={false}/>
         </VStack>
