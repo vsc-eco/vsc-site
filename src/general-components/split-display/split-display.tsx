@@ -1,4 +1,4 @@
-import { Box, Heading, Link, Stack, Image as ChakraImage } from '@chakra-ui/react'
+import { Box, Heading, Link, Stack, Image as ChakraImage, VStack } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react';
 import { Text } from '@chakra-ui/react'
 import './split-display.css'
@@ -14,8 +14,8 @@ export const HalfpageDisplay = (props: {section: SimpleSection, linkedDoc?: stri
     }
 
     return(
-    <Box width={{ base: '100%', lg: '50%' }} display={'flex'} justifyContent={'center'} padding={{ base: '5em 5em', lg: '0 10em' }} className='split-text'>
-        <Heading>{props.section.header}</Heading>
+    <VStack width={{ base: '100%', lg: '50%' }} height={'45%'} justifyContent={'center'} padding={{ base: '6em 3em 3em 3em', lg: '0 10em' }}>
+        <Heading fontSize={{ base: '5xl', lg: 'xl' }}>{props.section.header}</Heading>
         <br/>
         {subSections}
         {props.linkedDoc !== undefined &&
@@ -24,6 +24,7 @@ export const HalfpageDisplay = (props: {section: SimpleSection, linkedDoc?: stri
                 className={"link-button"}
                 href={props.linkedDoc}
                 bg="black"
+                width={'100%'}
                 borderRadius="md"
                 px={4}
                 py={2}
@@ -33,7 +34,7 @@ export const HalfpageDisplay = (props: {section: SimpleSection, linkedDoc?: stri
                 Learn more!
           </Link>
         }
-    </Box>
+    </VStack>
 )};
   
 const SplitDisplay = (props: { previewImageUrl: string, highResImageUrl: string, section: SimpleSection, linkedDoc?: string, imageOnTheLeft?: boolean }) => {
@@ -48,8 +49,8 @@ const SplitDisplay = (props: { previewImageUrl: string, highResImageUrl: string,
     }, [props.highResImageUrl]);
 
         return(  
-        <Stack spacing={0} height={'100vh'} className='container' direction={{ base: (props.imageOnTheLeft == true ? 'column-reverse': 'column'), lg: (props.imageOnTheLeft == true ? 'row-reverse': 'row') }}>
-            <ChakraImage width={{ base: '100%', lg: '50%' }} height={{ base: '65%', lg: '100vh' }} className='split-img' loading="lazy" alt="" src={imageLoaded ? props.highResImageUrl : props.previewImageUrl}/>
+        <Stack alignContent={'center'} alignItems={'center'}    justifyContent={'space-between'} spacing={0} height={'100vh'} className='container' direction={{ base: (props.imageOnTheLeft == true ? 'column-reverse': 'column'), lg: (props.imageOnTheLeft == true ? 'row-reverse': 'row') }}>
+            <ChakraImage width={{ base: '100%', lg: '50%' }} height={{ base: '55%', lg: '100vh' }} className='split-img' loading="lazy" alt="" src={imageLoaded ? props.highResImageUrl : props.previewImageUrl}/>
             <HalfpageDisplay section={props.section} linkedDoc={props.linkedDoc}></HalfpageDisplay>
         </Stack>
     )}
