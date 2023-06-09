@@ -6,6 +6,7 @@ import { simpleSections } from "./details-sections";
 import { CopyBlock, a11yLight, railscast } from "react-code-blocks";
 import { ViewIcon } from "@chakra-ui/icons";
 import Footer from "../general-components/footer/footer";
+import { DividerWithSpace } from "../general-components/dividerWithSpace";
 
 const basicContract: string = `
 actions.init = async () => {
@@ -21,14 +22,6 @@ actions.set = async ({key, value}) => {
     await state.update('test-repo', data)
 }
 `
-
-const DividerWithSpace = () => { return <>
-    <br/>
-    <br/>
-    <Divider borderColor='gray.200' />
-    <br/>
-    <br/>
-</>}
 
 const Details = () => { 
     const { colorMode, toggleColorMode } = useColorMode()

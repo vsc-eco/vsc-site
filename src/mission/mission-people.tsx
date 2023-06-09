@@ -4,6 +4,7 @@ import SplitDisplay from "../general-components/split-display/split-display";
 import { SimpleSection } from "../models/SimpleSection";
 import Footer from "../general-components/footer/footer";
 import { FaDiscord } from "react-icons/fa";
+import { DividerWithSpace } from "../general-components/dividerWithSpace";
 
 const linkedDoc = 'https://vsc-eco.github.io/docs/scalability/tbd'
 const previewImageUrl = 'https://images.pexels.com/photos/276254/pexels-photo-276254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
@@ -19,32 +20,29 @@ const section: SimpleSection = {
 const MissionPeople = () => (
     <div className='custom-section p-container'>
         <div className="slide wrapup-container">
-            <VStack justifyContent={""} spacing={"5"}>
-                <>
-                    <Heading size='3xl'>Our Team</Heading>
-                    <br/>
-                    <HStack spacing={"10"}>
-                        <VStack>
-                            <Link href="https://github.com/vaultec81"><Image width={"150px;"} borderRadius={"50%"} src="https://github.com/vaultec81.png?size=460"/></Link>
-                            <Text>Vaultec81</Text>
-                        </VStack>
-                        <VStack>
-                            <Link href="https://github.com/Pl8tinium"><Image width={"150px;"} borderRadius={"50%"} src="https://github.com/pl8tinium.png?size=460"/></Link>
-                            <Text>Platinium</Text>
-                        </VStack>
-                    </HStack>
-                </>
-                <Divider borderColor='gray.200' />
-                <>
-                    <Heading size='3xl'>Partnerships</Heading>
-                    <br/>
-                    <Text>Do you think a cooperation could be beneficial? Get in contact with us!</Text>
-                    <br/>
-                    <Link href="https://discord.gg/yvGXZsQTU6"><Image width={"100px;"}  src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg"/></Link>
-                    <br/>
-                    <br/>
-                    <Divider borderColor='gray.200' />
-                </>
+            <VStack padding={{ base: '5em', lg: 'unset' }}>
+                <Heading fontSize={{ base: '9xl', lg: '3xl' }}>Our Team</Heading>
+                <br/>
+                <HStack spacing={"10"}>
+                    <VStack>
+                        <Link href="https://github.com/vaultec81"><Image width={{ base: '300px', lg: '150px' }} borderRadius={"50%"} src="https://github.com/vaultec81.png?size=460"/></Link>
+                        <Text fontSize={{ base: '3xl', lg: 'lg' }}>Vaultec81</Text>
+                    </VStack>
+                    <VStack>
+                        <Link href="https://github.com/Pl8tinium"><Image width={{ base: '300px', lg: '150px' }} borderRadius={"50%"} src="https://github.com/pl8tinium.png?size=460"/></Link>
+                        <Text fontSize={{ base: '3xl', lg: 'lg' }}>Platinium</Text>
+                    </VStack>
+                </HStack>
+            </VStack>
+            <DividerWithSpace/>
+            <VStack padding={{ base: '5em', lg: 'unset' }}>
+                <Heading fontSize={{ base: '9xl', lg: '3xl' }}>Partnerships</Heading>
+                <br/>
+                <Text fontSize={{ base: '3xl', lg: 'lg' }}>Do you think a cooperation could be beneficial? Get in contact with us!</Text>
+                <br/>
+                <Link href="https://discord.gg/yvGXZsQTU6"><Image width={{ base: '250px', lg: '100px' }} src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg"/></Link>
+                <br/>
+                <br/>
             </VStack>
             <Footer fixed={true}/>
         </div>

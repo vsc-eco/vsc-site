@@ -14,7 +14,7 @@ export const HalfpageDisplay = (props: {section: SimpleSection, linkedDoc?: stri
     }
 
     return(
-    <VStack width={{ base: '100%', lg: '50%' }} height={'45%'} justifyContent={'center'} padding={{ base: '6em 3em 3em 3em', lg: '0 10em' }}>
+    <VStack width={{ base: '100%', lg: '50%' }} height={{ base: '45%', lg: 'unset' }} justifyContent={'center'} padding={{ base: '6em 3em 3em 3em', lg: '0 10em' }}>
         <Heading fontSize={{ base: '5xl', lg: 'xl' }}>{props.section.header}</Heading>
         <br/>
         {subSections}
