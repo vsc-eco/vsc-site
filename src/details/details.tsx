@@ -47,7 +47,7 @@ const Details = () => {
                 width={{ base: '100vw', lg: '60vw' }}
                 className="details-container"
                 align='baseline'>
-                    <Heading as='h1' size={{ base: '4xl', lg: '3xl' }}  id="contracts">Contracts</Heading>
+                    <Heading as='h1' size={{ base: '4xl', lg: '3xl' }} padding={{ base: '0 0 0 25px', lg: 'unset' }}id="contracts">Contracts</Heading>
                     <br/>
                     <br/>
                     <DetailsSection widthDesktop={60} section={simpleSections.smartContractsOffchainJsCode} presentedItems={{
@@ -68,7 +68,7 @@ const Details = () => {
                     <DividerWithSpace/>
 
                                         
-                    <Heading as='h1' size='3xl' id="scalability">Scalability</Heading>
+                    <Heading as='h1' size='3xl' padding={{ base: '0 0 0 25px', lg: 'unset' }} id="scalability">Scalability</Heading>
                     <br/>
                     <br/>
                     <DetailsSection widthDesktop={0} section={simpleSections.groupOfValidators} presentedItems={{

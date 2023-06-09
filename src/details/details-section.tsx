@@ -21,7 +21,7 @@ const DetailsSection = (props: { section: SimpleSection, widthDesktop: number, p
 
         subSections.push(
             <Stack align={'center'} direction={{ base: 'column', lg: (props.imageOnTheLeft ? 'row-reverse': 'row') }} spacing={10}>
-                <Text marginRight={'15px'} marginLeft={'15px'} fontSize={{ base: '56px', lg: 'lg' }} width={{ base: '100vw', lg: (props.widthDesktop * 2 + 100 +'%') }} textAlign="left" key={i + 'sec'}>{props.section.textSections[i]}</Text>
+                <Text margin={{ base: '0 25px 0 25px', lg: 'unset' }} fontSize={{ base: '56px', lg: 'lg' }} width={{ base: '100vw', lg: (props.widthDesktop * 2 + 100 +'%') }} textAlign="left" key={i + 'sec'}>{props.section.textSections[i]}</Text>
                 <Box display={'flex'} justifyContent={'center'} width={"95%"}>
                     {sideItem}
                 </Box>
@@ -30,7 +30,7 @@ const DetailsSection = (props: { section: SimpleSection, widthDesktop: number, p
 
     return(
     <Stack alignContent={'left'}>
-       <Heading size={{ base: '3xl', lg: 'xl' }} alignSelf={"baseline"} id={props.section.id ?? headerConvert(props.section.header)}>{props.section.header}</Heading>
+       <Heading padding={{ base: '0 25px 0 25px', lg: 'unset' }} size={{ base: '3xl', lg: 'xl' }} alignSelf={"baseline"} id={props.section.id ?? headerConvert(props.section.header)}>{props.section.header}</Heading>
        {subSections}
     </Stack>
 )};
