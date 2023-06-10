@@ -14,6 +14,7 @@ import {
     useColorModeValue,
     useBreakpointValue,
     useDisclosure,
+    Image
 } from "@chakra-ui/react";
 import {
     HamburgerIcon,
@@ -55,6 +56,7 @@ export default function WithSubnavigation(props: { fixed: boolean }) {
                 px={{ base: 4 }}
                 align={"center"}
                 justifyContent={"space-between"}
+                width={{ base: '115%', lg: 'unset' }}
             >
                 <Flex
                     ml={{ base: -2 }}
@@ -66,11 +68,13 @@ export default function WithSubnavigation(props: { fixed: boolean }) {
                             isOpen ? <CloseIcon boxSize={{ base: 120 }} /> : <HamburgerIcon boxSize={{ base: 120 }} />
                         }
                         variant={"ghost"}
+                        bg='transparent'
+                        // _focus={{outline: 'none', boxShadow: 'none'}}
                         aria-label={"Toggle Navigation"}
                     />
                 </Flex>
 
-                <img src="/VSC-Logo.png" className="logo" alt="logo" />
+                <Image width={{ base: '12em', lg: '50px' }} src="/VSC-Logo.png" alt="logo" />
 
                 <Flex  alignItems='center'>                    
                     <Flex display={{ base: "none", lg: "flex" }} ml={10}>
@@ -163,11 +167,11 @@ const MobileNavItem = ({ label, href }: NavItem) => {
                 align={"center"}
                 _hover={{
                     textDecoration: "none",
-                }}
+                }}                
             >
                 <Text
                     fontWeight={600}
-                >
+                    fontSize={{ base: '5xl', lg: 'lg' }}>
                     {label}
                 </Text>
             </Flex>
