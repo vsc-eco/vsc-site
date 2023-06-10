@@ -69,11 +69,10 @@ export default function WithSubnavigation(props: { fixed: boolean }) {
                         }
                         variant={"ghost"}
                         bg='transparent'
-                        // _focus={{outline: 'none', boxShadow: 'none'}}
                         aria-label={"Toggle Navigation"}
                     />
                 </Flex>
-
+        
                 <Image width={{ base: '12em', lg: '50px' }} src="/VSC-Logo.png" alt="logo" />
 
                 <Flex  alignItems='center'>                    
@@ -145,12 +144,14 @@ const getMobileNavItems = () => {
 
 const MobileNav = () => {
     return (
+        <Box borderRadius={'20px'} width={'100%'} bg={'blackAlpha.500'}>
         <Stack
             p={4}
             display={{ lg: "none" }}
         >
             {getMobileNavItems()}
         </Stack>
+        </Box>
     );
 };
 
@@ -169,11 +170,13 @@ const MobileNavItem = ({ label, href }: NavItem) => {
                     textDecoration: "none",
                 }}                
             >
-                <Text
-                    fontWeight={600}
-                    fontSize={{ base: '5xl', lg: 'lg' }}>
-                    {label}
-                </Text>
+                <Box borderRadius={'20px'} width={'100%'} bg={'blackAlpha.800'}>
+                    <Text
+                        fontWeight={600}
+                        fontSize={{ base: '5xl', lg: 'lg' }}>
+                        {label}
+                    </Text>
+                </Box>
             </Flex>
 
             <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
