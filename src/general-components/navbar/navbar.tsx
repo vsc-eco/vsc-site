@@ -25,8 +25,6 @@ import React from "react";
 import NavItem from "../../models/NavItem";
 import './navbar.css';
 
-//pla: this example was used https://chakra-templates.dev/navigation/navbar
-
 const NAV_ITEMS: Array<NavItem> = [
     {
         label: "The mission",
@@ -60,12 +58,12 @@ export default function WithSubnavigation(props: { fixed: boolean }) {
             >
                 <Flex
                     ml={{ base: -2 }}
-                    display={{ base: "flex", md: "none" }}
+                    display={{ base: "flex", lg: "none" }}
                 >
                     <IconButton
                         onClick={onToggle}
                         icon={
-                            isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
+                            isOpen ? <CloseIcon boxSize={{ base: 120 }} /> : <HamburgerIcon boxSize={{ base: 120 }} />
                         }
                         variant={"ghost"}
                         aria-label={"Toggle Navigation"}
@@ -75,7 +73,7 @@ export default function WithSubnavigation(props: { fixed: boolean }) {
                 <img src="/VSC-Logo.png" className="logo" alt="logo" />
 
                 <Flex  alignItems='center'>                    
-                    <Flex display={{ base: "none", md: "flex" }} ml={10}>
+                    <Flex display={{ base: "none", lg: "flex" }} ml={10}>
                         <DesktopNav />
                     </Flex>
                 </Flex>
@@ -86,7 +84,7 @@ export default function WithSubnavigation(props: { fixed: boolean }) {
                 >
                     <Button
                         as={"a"}
-                        display={{ base: "none", md: "inline-flex" }}
+                        display={{ base: "none", lg: "inline-flex" }}
                         fontSize={"sm"}
                         fontWeight={600}
                         href={"https://vsc-eco.github.io/"}
@@ -145,7 +143,7 @@ const MobileNav = () => {
     return (
         <Stack
             p={4}
-            display={{ md: "none" }}
+            display={{ lg: "none" }}
         >
             {getMobileNavItems()}
         </Stack>

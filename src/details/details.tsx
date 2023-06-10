@@ -96,7 +96,7 @@ const Details = () => {
                         0: <Image width={'100%'} src="drawings/cost.svg"/>
                     }}/>
             </VStack>
-            <Footer fixed={false}/>
+            <Footer/>
         </VStack>
     );
 }  

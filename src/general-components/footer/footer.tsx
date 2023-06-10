@@ -51,11 +51,10 @@ import { headerConvert } from '../../utils';
     );
   };
   
-  export default function SmallWithLogoLeft(props: { fixed: boolean }) {
+  export default function SmallWithLogoLeft(props: { }) {
 
     return (
       <Box
-        style={{ position: (props.fixed ? "fixed": "unset")}}
         bottom={"0px"}
         width={"100vw"}>
         <Container
@@ -79,7 +78,7 @@ import { headerConvert } from '../../utils';
             <Link href={'details#contracts'}>Contracts</Link>
             <Link href={'details#scalability'}>Scalability</Link>
           </VStack>
-          <Stack width={'100%'} justifyContent={'space-around'} direction={'row'} spacing={6} paddingTop={{ base: '1em', lg: 'unset' }}>
+          <Stack width={{ base: '100%', lg: 'unset' }} justifyContent={'space-around'} direction={'row'} spacing={6} paddingTop={{ base: '1em', lg: 'unset' }}>
             <SocialButton label={'Twitter'} href={'https://twitter.com/vsc_eco'}>
               <Icon w={120} h={120} boxSize={{ base: 120, lg: 5 }} as={FaTwitter} />
             </SocialButton>

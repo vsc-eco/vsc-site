@@ -10,8 +10,6 @@
 }
 
 .wrapup-container {
-    /* display: flex;
-    justify-content: space-around; */
     display: grid;
-    grid-template-rows: auto auto 30%;
+    height: 100%;
 }

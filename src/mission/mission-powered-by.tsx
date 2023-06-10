@@ -17,12 +17,7 @@ const MissionPoweredBy = () => (
         <div className="slide">
             <VStack justify={"center"} align={"center"} height={"100vh"} padding={{ base: '5em', lg: 'unset' }}>
                 <Heading fontSize={{ base: '9xl', lg: '3xl' }}>{section.header}</Heading>
-                {/* <br/>
-                <br/> */}
                 <Text fontSize={{ base: '3xl', lg: 'lg' }}>{section.textSections}</Text>
-                {/* <br/>
-                <br/>
-                <br/> */}
                 <HStack spacing={"10"} justifyContent={"space-evenly"}>
                         <a href="https://ipfs.tech" target="_blank">
                     <Image height={{ base: '400px', lg: '300px' }} src="https://upload.wikimedia.org/wikipedia/commons/1/18/Ipfs-logo-1024-ice-text.png"></Image>
