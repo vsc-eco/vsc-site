@@ -50,7 +50,7 @@ export default function WithSubnavigation(props: { fixed: boolean }) {
     const { isOpen, onToggle } = useDisclosure();
 
     return (
-        <Box className="navbar-wrapper" style={{ position: (props.fixed ? "fixed": "unset")}}>
+        <Box className="navbar-wrapper" style={{ position: (props.fixed ? "fixed": "unset")}} width={'100vw'}>
             <Flex
                 minH={"60px"}
                 py={{ base: 2 }}

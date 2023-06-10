@@ -3,7 +3,6 @@ import { Box, HStack, Heading, Image, Link, VStack, Text, Divider } from '@chakr
 import SplitDisplay from "../general-components/split-display/split-display";
 import { SimpleSection } from "../models/SimpleSection";
 import Footer from "../general-components/footer/footer";
-import { FaDiscord } from "react-icons/fa";
 import { DividerWithSpace } from "../general-components/dividerWithSpace";
 
 const linkedDoc = 'https://vsc-eco.github.io/docs/scalability/tbd'
@@ -20,8 +19,8 @@ const section: SimpleSection = {
 const MissionPeople = () => (
     <div className='custom-section p-container'>
         <div className="slide wrapup-container">
-            <VStack padding={{ base: '5em', lg: 'unset' }}>
-                <Heading fontSize={{ base: '9xl', lg: '3xl' }}>Our Team</Heading>
+            <VStack padding={{ base: '1em', lg: 'unset' }}>
+                <Heading fontSize={{ base: '7xl', lg: '3xl' }}>Our Team</Heading>
                 <br/>
                 <HStack spacing={"10"}>
                     <VStack>
@@ -35,16 +34,16 @@ const MissionPeople = () => (
                 </HStack>
             </VStack>
             <DividerWithSpace/>
-            <VStack padding={{ base: '5em', lg: 'unset' }}>
-                <Heading fontSize={{ base: '9xl', lg: '3xl' }}>Partnerships</Heading>
+            <VStack padding={{ base: '1em', lg: 'unset' }}>
+                <Heading fontSize={{ base: '7xl', lg: '3xl' }}>Partnerships</Heading>
                 <br/>
                 <Text fontSize={{ base: '3xl', lg: 'lg' }}>Do you think a cooperation could be beneficial? Get in contact with us!</Text>
                 <br/>
+                <br/>
                 <Link href="https://discord.gg/yvGXZsQTU6"><Image width={{ base: '250px', lg: '100px' }} src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a69f118df70ad7828d4_icon_clyde_blurple_RGB.svg"/></Link>
-                <br/>
-                <br/>
             </VStack>
-            <Footer fixed={true}/>
+            <DividerWithSpace/>
+            <Footer fixed={false}/>
         </div>
     </div>
 );

@@ -10,7 +10,7 @@ export const HalfpageDisplay = (props: {section: SimpleSection, linkedDoc?: stri
     const subSections = [];
     for (let i = 0; i < props.section.textSections.length; i++) {
         subSections.push(<Text fontSize={{ base: '4xl', lg: 'lg' }} key={i} textAlign="left">{props.section.textSections[i]}</Text>)
-        subSections.push(<br/>)
+        subSections.push(<br key={i + 'br'} />)
     }
 
     return(

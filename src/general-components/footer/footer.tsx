@@ -3,6 +3,7 @@ import {
     chakra,
     Container,
     HStack,
+    Icon,
     Link,
     Stack,
     Text,
@@ -56,39 +57,40 @@ import { headerConvert } from '../../utils';
       <Box
         style={{ position: (props.fixed ? "fixed": "unset")}}
         bottom={"0px"}
-        width={"99vw"}>
+        width={"100vw"}>
         <Container
           as={Stack}
           maxW={'6xl'}
           py={4}
-          direction={{ base: 'column', md: 'row' }}
+          direction={{ base: 'column', lg: 'row' }}
           spacing={4}
-          justify={{ base: 'center', md: 'space-between' }}
-          align={{ base: 'center', md: 'center' }}>
+          justify={{ base: 'center', lg: 'space-between' }}
+          align={{ base: 'center', lg: 'center' }}
+          fontSize={{ base: '40px', lg: 'lg' }}>
           <HStack>
             <Logo/>
             <Text>VSC © 2023</Text>
           </HStack>
           <VStack spacing={1}>
-            <Link href={''}>The Mission</Link>
+            <Link href={'/'}>The Mission</Link>
             <Link href={'https://vsc-eco.github.io/'}>Docs</Link>
           </VStack>
           <VStack spacing={1}>
             <Link href={'details#contracts'}>Contracts</Link>
             <Link href={'details#scalability'}>Scalability</Link>
           </VStack>
-          <Stack direction={'row'} spacing={6}>
+          <Stack width={'100%'} justifyContent={'space-around'} direction={'row'} spacing={6} paddingTop={{ base: '1em', lg: 'unset' }}>
             <SocialButton label={'Twitter'} href={'https://twitter.com/vsc_eco'}>
-              <FaTwitter />
+              <Icon w={120} h={120} boxSize={{ base: 120, lg: 5 }} as={FaTwitter} />
             </SocialButton>
             <SocialButton label={'PeakD'} href={'https://peakd.com/@vsc.network'}>
-              <FaRss />
+              <Icon boxSize={{ base: 120, lg: 5 }} as={FaRss}/>
             </SocialButton>
             <SocialButton label={'Discord'} href={'https://discord.gg/yvGXZsQTU6'}>
-              <FaDiscord />
+              <Icon boxSize={{ base: 120, lg: 5 }} as={FaDiscord}/>
             </SocialButton>
             <SocialButton label={'Github'} href={'https://github.com/vsc-eco'}>
-              <FaGithub />
+              <Icon boxSize={{ base: 120, lg: 5 }} as={FaGithub}/>
             </SocialButton>
           </Stack>
         </Container>
