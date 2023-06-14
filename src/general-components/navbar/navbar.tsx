@@ -14,6 +14,7 @@ import {
     useColorModeValue,
     useBreakpointValue,
     useDisclosure,
+    Image
 } from "@chakra-ui/react";
 import {
     HamburgerIcon,
@@ -24,8 +25,6 @@ import {
 import React from "react";
 import NavItem from "../../models/NavItem";
 import './navbar.css';
-
-//pla: this example was used https://chakra-templates.dev/navigation/navbar
 
 const NAV_ITEMS: Array<NavItem> = [
     {
@@ -50,32 +49,34 @@ export default function WithSubnavigation(props: { fixed: boolean }) {
     const { isOpen, onToggle } = useDisclosure();
 
     return (
-        <Box className="navbar-wrapper" style={{ position: (props.fixed ? "fixed": "unset")}}>
+        <Box className="navbar-wrapper" style={{ position: (props.fixed ? "fixed": "unset")}} width={'100vw'}>
             <Flex
                 minH={"60px"}
                 py={{ base: 2 }}
                 px={{ base: 4 }}
                 align={"center"}
                 justifyContent={"space-between"}
+                width={{ base: '115%', lg: 'unset' }}
             >
                 <Flex
                     ml={{ base: -2 }}
-                    display={{ base: "flex", md: "none" }}
+                    display={{ base: "flex", lg: "none" }}
                 >
                     <IconButton
                         onClick={onToggle}
                         icon={
-                            isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
+                            isOpen ? <CloseIcon boxSize={{ base: 120 }} /> : <HamburgerIcon boxSize={{ base: 120 }} />
                         }
                         variant={"ghost"}
+                        bg='transparent'
                         aria-label={"Toggle Navigation"}
                     />
                 </Flex>
-
-                <img src="/VSC-Logo.png" className="logo" alt="logo" />
+        
+                <Image width={{ base: '12em', lg: '50px' }} src="/VSC-Logo.png" alt="logo" />
 
                 <Flex  alignItems='center'>                    
-                    <Flex display={{ base: "none", md: "flex" }} ml={10}>
+                    <Flex display={{ base: "none", lg: "flex" }} ml={10}>
                         <DesktopNav />
                     </Flex>
                 </Flex>
@@ -86,7 +87,7 @@ export default function WithSubnavigation(props: { fixed: boolean }) {
                 >
                     <Button
                         as={"a"}
-                        display={{ base: "none", md: "inline-flex" }}
+                        display={{ base: "none", lg: "inline-flex" }}
                         fontSize={"sm"}
                         fontWeight={600}
                         href={"https://vsc-eco.github.io/"}
@@ -143,12 +144,14 @@ const getMobileNavItems = () => {
 
 const MobileNav = () => {
     return (
+        <Box borderRadius={'20px'} width={'100%'} bg={'blackAlpha.500'}>
         <Stack
             p={4}
-            display={{ md: "none" }}
+            display={{ lg: "none" }}
         >
             {getMobileNavItems()}
         </Stack>
+        </Box>
     );
 };
 
@@ -165,13 +168,15 @@ const MobileNavItem = ({ label, href }: NavItem) => {
                 align={"center"}
                 _hover={{
                     textDecoration: "none",
-                }}
+                }}                
             >
-                <Text
-                    fontWeight={600}
-                >
-                    {label}
-                </Text>
+                <Box borderRadius={'20px'} width={'100%'} bg={'blackAlpha.800'}>
+                    <Text
+                        fontWeight={600}
+                        fontSize={{ base: '5xl', lg: 'lg' }}>
+                        {label}
+                    </Text>
+                </Box>
             </Flex>
 
             <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>

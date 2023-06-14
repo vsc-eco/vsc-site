@@ -16,7 +16,7 @@ const section: SimpleSection = {
 
 const MissionScalable = () => (
     <div className='custom-section'>
-        <SplitDisplay highResImageUrl={highResImageUrl} previewImageUrl={previewImageUrl} section={section} linkedDoc={linkedDoc} imageOnTheLeft={false}></SplitDisplay>
+        <SplitDisplay highResImageUrl={highResImageUrl} previewImageUrl={previewImageUrl} section={section} linkedDoc={linkedDoc} imageOnTheLeft={true}></SplitDisplay>
     </div>
 );
   

@@ -1,4 +1,6 @@
-export const simpleSections = {
+import { SimpleSection } from "../models/SimpleSection";
+
+export const simpleSections: { [key: string]: SimpleSection } = {
     smartContractsOffchainJsCode: {
         header: "Smart contracts are regular JavaScript code",
         textSections: ["Smart contracts, the fundamental aspect of VSC, are implemented as JavaScript (JS) code. This design choice provides numerous advantages, including flexibility, accessibility, and ease of use for developers.",
