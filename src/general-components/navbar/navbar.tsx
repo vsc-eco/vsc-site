@@ -43,6 +43,10 @@ const NAV_ITEMS: Array<NavItem> = [
         label: "Links",
         href: "https://linktr.ee/vsc.network",
     },
+    {
+        label: "Block Explorer",
+        href: "https://vsc.techcoderx.com",
+    },
 ];
 
 export default function WithSubnavigation(props: { fixed: boolean }) {
