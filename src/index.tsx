@@ -10,6 +10,7 @@ import Topbar from "./general-components/navbar/navbar";
 import Mission from "./mission/mission";
 import Scalability from "./details/details";
 import Details from "./details/details";
+import Jobs from './jobs'
 import { extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
 import { Analytics } from '@vercel/analytics/react';
@@ -37,6 +38,7 @@ export default class App extends React.Component {
               <Routes>
                 <Route index element={<Mission/>} />
                 <Route path="details" element={<Details />} />
+                <Route path="jobs" element={<Jobs />} />
                 <Route path="*" element={<Mission />} />
               </Routes>
             </div>
