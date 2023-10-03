@@ -20,7 +20,11 @@ const MissionLanding = () => (
                     <iframe  src="https://3speak.tv/embed?v=vsc.network/qldflfmt" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 </AspectRatio>
             </center>
-            <img height={""} src="/arrow-down.png" className="arrow-down" alt="logo" />
+            <div className="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
 );
