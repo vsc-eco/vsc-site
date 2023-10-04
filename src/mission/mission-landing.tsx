@@ -20,7 +20,7 @@ const MissionLanding = () => (
                     <iframe  src="https://3speak.tv/embed?v=vsc.network/qldflfmt" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 </AspectRatio>
             </center>
-            <div className="arrow">
+            <div className="arrow" onClick={() => (window as any).fullpage_api.moveSectionDown()}>
                 <span></span>
                 <span></span>
                 <span></span>
