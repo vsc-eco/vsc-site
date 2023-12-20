@@ -14,6 +14,7 @@ import Jobs from './jobs'
 import { extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
 import { Analytics } from '@vercel/analytics/react';
+import Hackathons from "./hackathons/hackathons";
 
 
 const theme = extendTheme(
@@ -39,6 +40,7 @@ export default class App extends React.Component {
                 <Route index element={<Mission/>} />
                 <Route path="details" element={<Details />} />
                 <Route path="jobs" element={<Jobs />} />
+                <Route path="hackathons" element={<Hackathons />} />
                 <Route path="*" element={<Mission />} />
               </Routes>
             </div>

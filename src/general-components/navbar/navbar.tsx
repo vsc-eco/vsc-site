@@ -47,6 +47,10 @@ const NAV_ITEMS: Array<NavItem> = [
         label: "Block Explorer",
         href: "https://vsc.techcoderx.com",
     },
+    {
+        label: "Hackathons",
+        href: "/hackathons",
+    },
 ];
 
 export default function WithSubnavigation(props: { fixed: boolean }) {

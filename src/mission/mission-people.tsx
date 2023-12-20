@@ -37,6 +37,10 @@ const MissionPeople = () => (
                             <Link href="https://github.com/piyushjha0409"><Image width={{ base: '300px', lg: '150px' }} borderRadius={"50%"} src="https://github.com/piyushjha0409.png?size=460"/></Link>
                             <Text fontSize={{ base: '3xl', lg: 'lg' }}>Piyushjha0409</Text>
                         </VStack>
+                        <VStack>
+                            <Link href="https://github.com/0xumarkhatab"><Image width={{ base: '300px', lg: '150px' }} borderRadius={"50%"} src="https://github.com/0xumarkhatab.png?size=460"/></Link>
+                            <Text fontSize={{ base: '3xl', lg: 'lg' }}>0xumarkhatab</Text>
+                        </VStack>
                     </HStack>
                 </VStack>
                 <DividerWithSpace/>
