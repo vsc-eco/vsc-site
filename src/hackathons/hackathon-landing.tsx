@@ -6,7 +6,7 @@ import { ReactSVG } from "react-svg";
 
 const HackathonsLanding = () => {
     const svgSrc = useBreakpointValue({ base: "drawings/hackathons-mobile.svg", lg: "drawings/hackathons.svg" });
-
+    const widthImage = useBreakpointValue({ base: "100", lg: "70" });
     return (
         <div className='custom-section landing-hackathon-container'>
             <Navbar fixed={true}/>
@@ -14,7 +14,7 @@ const HackathonsLanding = () => {
                 <center>
                     <div style={{ backgroundColor: 'black' }}>
                         <ReactSVG src={svgSrc!} beforeInjection={(svg) => {
-                            svg.setAttribute('style', 'width: 100%; height: auto;');
+                            svg.setAttribute('style', `width: ${widthImage}%; height: auto;`);
                         }}/>
                     </div>
                 </center>
