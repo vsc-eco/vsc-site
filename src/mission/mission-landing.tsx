@@ -17,7 +17,7 @@ const MissionLanding = () => (
             <br/>
             <center>
                 <AspectRatio height={{ base: '500px', lg: '315px' }} width={{ base: '888px', lg: '560px' }} ratio={1}>
-                    <iframe  src="https://3speak.tv/embed?v=vsc.network/qldflfmt" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    <iframe  src="https://3speak.tv/watch?v=vsc.network/uthosijv" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 </AspectRatio>
             </center>
             <div className="arrow" onClick={() => (window as any).fullpage_api.moveSectionDown()}>
