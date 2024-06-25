@@ -5,7 +5,7 @@ import { SimpleSection } from "../models/SimpleSection";
 import Footer from "../general-components/footer/footer";
 import { DividerWithSpace } from "../general-components/dividerWithSpace";
 
-const linkedDoc = 'https://vsc-eco.github.io/docs/scalability/tbd'
+const linkedDoc = 'https://docs.vsc.eco/docs/scalability/tbd'
 const previewImageUrl = 'https://images.pexels.com/photos/276254/pexels-photo-276254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 const highResImageUrl = 'https://images.pexels.com/photos/276254/pexels-photo-276254.jpeg'
 

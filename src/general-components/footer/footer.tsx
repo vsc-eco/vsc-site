@@ -72,7 +72,7 @@ import { headerConvert } from '../../utils';
           </HStack>
           <VStack spacing={1}>
             <Link href={'/'}>The Mission</Link>
-            <Link href={'https://vsc-eco.github.io/'}>Docs</Link>
+            <Link href={'https://docs.vsc.eco/'}>Docs</Link>
           </VStack>
           <VStack spacing={1}>
             <Link href={'details#contracts'}>Contracts</Link>

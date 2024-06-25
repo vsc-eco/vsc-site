@@ -3,7 +3,7 @@ import { Box, Image } from '@chakra-ui/react'
 import SplitDisplay from "../general-components/split-display/split-display";
 import { SimpleSection } from "../models/SimpleSection";
 
-const linkedDoc = 'https://vsc-eco.github.io/docs/scalability/tbd'
+const linkedDoc = 'https://docs.vsc.eco/docs/scalability/tbd'
 const previewImageUrl = 'https://images.pexels.com/photos/5644179/pexels-photo-5644179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 const highResImageUrl = 'https://images.pexels.com/photos/5644179/pexels-photo-5644179.jpeg'
 

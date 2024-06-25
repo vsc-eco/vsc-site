@@ -3,7 +3,7 @@ import { Box, HStack, Heading, Image, Link, VStack, Text } from '@chakra-ui/reac
 import SplitDisplay, { HalfpageDisplay } from "../general-components/split-display/split-display";
 import { SimpleSection } from "../models/SimpleSection";
 
-const linkedDoc = 'https://vsc-eco.github.io/docs/scalability/tbd'
+const linkedDoc = 'https://docs.vsc.eco/docs/scalability/tbd'
 
 const section: SimpleSection = {
     header: 'Powered by',
