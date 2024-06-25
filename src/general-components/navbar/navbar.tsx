@@ -94,7 +94,7 @@ export default function WithSubnavigation(props: { fixed: boolean }) {
                         display={{ base: "none", lg: "inline-flex" }}
                         fontSize={"sm"}
                         fontWeight={600}
-                        href={"https://vsc-eco.github.io/"}
+                        href={"https://docs.vsc.eco/"}
                     >
                         Docs
                     </Button>
@@ -143,7 +143,7 @@ const DesktopNav = () => {
 const getMobileNavItems = () => {
     return [NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
-    )), <MobileNavItem key={"Docs"} {...{label: "Docs", href: "https://vsc-eco.github.io/"}} />]
+    )), <MobileNavItem key={"Docs"} {...{label: "Docs", href: "https://docs.vsc.eco/"}} />]
 }
 
 const MobileNav = () => {
