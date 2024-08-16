@@ -2,10 +2,19 @@ import { SimpleSection } from "../models/SimpleSection";
 
 export const simpleSections: { [key: string]: SimpleSection } = {
     smartContractsOffchainJsCode: {
-        header: "Smart contracts are regular JavaScript code",
-        textSections: ["Smart contracts, the fundamental aspect of VSC, are implemented as JavaScript (JS) code. This design choice provides numerous advantages, including flexibility, accessibility, and ease of use for developers.",
-            "By utilizing JS as the programming language for smart contracts, developers can leverage the extensive ecosystem and familiarity associated with this widely adopted language. JavaScript is a versatile language that is well-known among developers, making it easier to write, test, and deploy smart contracts. The abundance of tools and documentation available for JavaScript further streamlines the development process and enhances productivity.",
-            "VSC utilizes a sandboxed Virtual Machine (VM) to execute JavaScript code securely and efficiently. A limited set of helper functions is provided to aid the developer in interacting with other contracts on the chain. Some inbuilt JavaScript functionality is restricted (e.g. randomness functions) to provide a deterministic execution behavior, required for consensus about the result of a contract."]
+        header: "Universal Language Smart Contracts",
+        textSections: [
+            `
+            Smart contracts, a fundamental aspect of VSC, are implemented in WebAssembly. 
+            This provides critical advantages such as flexibility, language interopability, and access to a large selection of already existing tools and libraries. By utilizing WebAssembly, developers can write smart contracts in C++, Assemblyscript, Golang, rust or any language with support for WebAssembly. 
+            `,
+            `
+            Currently, we officially support Assemblyscript via our dedicated SDK and contract template. 
+            In the future we plan to add support for even more languages, creating a rich environment of accessibility and tooling. 
+            Nothing stops developers from utilizing already built libraries in their language of choice. 
+            No need to learn a new language to write contracts on VSC!
+            `
+        ]
     },
     smartContractControlledMultisigs: {
         header: "Smart contract controlled multisigs", 
@@ -13,13 +22,23 @@ export const simpleSections: { [key: string]: SimpleSection } = {
             "One prominent use case where smart contracts leverage multisig control is in decentralized exchanges (DEXs) or similar platforms. In these scenarios, smart contracts can facilitate the movement of funds to and from multisignature accounts, allowing for secure and trustless transactions between users. Another important use case is HIVE account creation, this allows for accounts to be created entirely without a centralized backend. By utilizing multisigs, smart contracts can ensure that the appropriate signatures and authorization are in place before executing operations, enhancing the security and integrity of the process."]
     },
     groupOfValidators: {
-        header: "Executed via a group of validators on a smart contract basis", 
-        textSections: ["By executing smart contracts via a group of validators on a smart contract basis, VSC ensures a robust and distributed approach to smart contract execution. This method allows for efficient processing, consensus, and validation of transactions, enabling the network to handle a wide range of decentralized applications and use cases effectively.",
-            "The validator set for a smart contract consists of a predefined number of validators who are responsible for executing the associated transactions. These validators work collaboratively to reach consensus on the execution results and ensure the correctness of the smart contract's state transition."]
+        header: "VSC uses technologies like DAGs, and ZK-proofs to scale the network.", 
+        textSections: [
+
+            `
+            VSC uses advanced scaling technologies to provide a high degree of scalability for users of the network. Often overlooked by mainstream chains, DAGs, zero knowledge proofs, and other technology offer substantial advantages in scalability for a blockchain. VSC is nimble and modular, making it easy to adapt and implement 
+            `,
+
+            `
+            In addition to utilizing advanced technologies, VSC aims to build it’s own layer to handle horizontal scaling. This allows VSC to split into separate (but interconnected) networks for a singular or multiple smart contracts. The VSC network provides ample capacity to build the applications of the future. We reject the notion of the Ethereum L2 model involving a large number of incompatible and often centralized L2 rollups. VSC is fully composable and we are actively working on building interopable layers with other L1s and L2s alike.
+            `
+        ]
     },
     ipfsStateAndTransactions: {
-        header: "Uses IPFS to store state and transactions", 
-        textSections: ["To store the state and transactions of smart contracts, VSC utilizes the InterPlanetary File System (IPFS), which provides a decentralized and highly scalable storage solution.",
+        header: "IPFS For Data Storage", 
+        textSections: [
+            
+            "To store the state and transactions of smart contracts, VSC utilizes the InterPlanetary File System (IPFS), which provides a decentralized and highly scalable storage solution.",
             "IPFS enables VSC to store and retrieve large amounts of data like e.g. contract code or contract output, compared to a traditional Layer 1 storage system. This enhances the overall flexibility and efficiency of the system."]
     },
     highlyScalableDataStructures: {
@@ -31,8 +50,15 @@ export const simpleSections: { [key: string]: SimpleSection } = {
             "By leveraging these highly scalable data structures, smart contract platforms can handle increasing transaction volumes and complex data interactions with ease. These data structures provide the foundation for efficient data management, parallel processing, data integrity verification, and conflict resolution in VSC, paving the way for scalability and improved performance in decentralized applications."]
     },
     witnessesKeepTrackMultisig: {
-        header: "Witnesses maintain the multisig", 
-        textSections: ["By controlling multisigs, witnesses act as guardians of the smart contract's multisignature functionality. They maintain a watchful eye on the multisig accounts, verifying the validity of transactions, confirming the required signatures, and ensuring compliance with the specified conditions. Witnesses play a vital role in upholding the integrity and security of the multisig operations, preventing unauthorized or fraudulent activities within the VSC ecosystem."]
+        header: "Layer 1 Gateway Wallet", 
+        textSections: [
+            `
+            VSC is a L2 for the Hive blockchain. Like most L2s, this requires custody of L1 assets. Often times, this is via a centralized multisig controlled by a foundation or other entity behind the L2 network. VSC is completely different, validators of the VSC network have full control of L1 assets. This prevents a single entity from taking control of the network and draining all assets. Validators within VSC play a vital role in upholding the integrity of the gateway wallet and production of VSC blocks.
+            `,
+            `
+            We are actively working on building even more advanced technology for safely and securely connecting L1 assets to VSC on Bitcoin and EVM.
+            `
+        ]
     },
     feelessSmartContractOperation: {
         header: "Zero fee/feeless smart contract operation", 

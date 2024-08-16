@@ -22,9 +22,9 @@ const MissionPeople = () => (
             <Box className="wrapup-container" gridTemplateRows={{ base: 'unset', lg: 'auto auto auto auto 10%' }}>
                 <VStack padding={{ base: '1em', lg: 'unset' }}>
                     <br/>
-                    <Heading fontSize={{ base: '7xl', lg: '3xl' }}>Our Team</Heading>
+                    <Heading fontSize={{ base: '7xl', lg: '3xl' }}>The Team</Heading>
                     <br/>
-                    <HStack spacing={"10"}>
+                    <HStack spacing={"10"} style={{flexWrap: 'wrap'}}>
                         <VStack>
                             <Link href="https://github.com/vaultec81"><Image width={{ base: '300px', lg: '150px' }} borderRadius={"50%"} src="https://github.com/vaultec81.png?size=460"/></Link>
                             <Text fontSize={{ base: '3xl', lg: 'lg' }}>Vaultec81</Text>
@@ -36,6 +36,21 @@ const MissionPeople = () => (
                         <VStack>
                             <Link href="https://github.com/piyushjha0409"><Image width={{ base: '300px', lg: '150px' }} borderRadius={"50%"} src="https://github.com/piyushjha0409.png?size=460"/></Link>
                             <Text fontSize={{ base: '3xl', lg: 'lg' }}>Piyushjha0409</Text>
+                        </VStack>
+                    </HStack>
+                    <HStack spacing={"10"} style={{flexWrap: 'wrap'}}>
+
+                        <VStack>
+                            <Link href="https://x.com/0xNiftynft"><Image width={{ base: '300px', lg: '150px' }} borderRadius={"50%"} src={"./team-profiles/0xNifty.png"}/></Link>
+                            <Text fontSize={{ base: '3xl', lg: 'lg' }}>OxNifty</Text>
+                        </VStack>
+                        <VStack>
+                            <Link href="https://x.com/manuphotos_"><Image width={{ base: '300px', lg: '150px' }} borderRadius={"50%"} src={"./team-profiles/manuphotos.png"}/></Link>
+                            <Text fontSize={{ base: '3xl', lg: 'lg' }}>Manuphotos</Text>
+                        </VStack>
+                        <VStack>
+                            <Link href="https://x.com/geo52rey"><Image width={{ base: '300px', lg: '150px' }} borderRadius={"50%"} src={"./team-profiles/geo52rey.png"}/></Link>
+                            <Text fontSize={{ base: '3xl', lg: 'lg' }}>Geo52rey</Text>
                         </VStack>
                     </HStack>
                 </VStack>
