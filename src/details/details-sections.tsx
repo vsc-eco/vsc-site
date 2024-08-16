@@ -16,11 +16,11 @@ export const simpleSections: { [key: string]: SimpleSection } = {
             `
         ]
     },
-    smartContractControlledMultisigs: {
-        header: "Smart contract controlled multisigs", 
-        textSections: ["Smart contracts possess the capability to control multisig operations and actively engage in on-chain activities. This functionality grants them the ability to participate in contract-specific operations conducted through multisignature accounts, enabling various functionalities and use cases within decentralized applications.",
-            "One prominent use case where smart contracts leverage multisig control is in decentralized exchanges (DEXs) or similar platforms. In these scenarios, smart contracts can facilitate the movement of funds to and from multisignature accounts, allowing for secure and trustless transactions between users. Another important use case is HIVE account creation, this allows for accounts to be created entirely without a centralized backend. By utilizing multisigs, smart contracts can ensure that the appropriate signatures and authorization are in place before executing operations, enhancing the security and integrity of the process."]
-    },
+    // smartContractControlledMultisigs: {
+    //     header: "Smart contract controlled multisigs", 
+    //     textSections: ["Smart contracts possess the capability to control multisig operations and actively engage in on-chain activities. This functionality grants them the ability to participate in contract-specific operations conducted through multisignature accounts, enabling various functionalities and use cases within decentralized applications.",
+    //         "One prominent use case where smart contracts leverage multisig control is in decentralized exchanges (DEXs) or similar platforms. In these scenarios, smart contracts can facilitate the movement of funds to and from multisignature accounts, allowing for secure and trustless transactions between users. Another important use case is HIVE account creation, this allows for accounts to be created entirely without a centralized backend. By utilizing multisigs, smart contracts can ensure that the appropriate signatures and authorization are in place before executing operations, enhancing the security and integrity of the process."]
+    // },
     groupOfValidators: {
         header: "VSC uses technologies like DAGs, and ZK-proofs to scale the network.", 
         textSections: [

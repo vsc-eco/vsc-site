@@ -62,10 +62,10 @@ const Details = () => {
                     }}/>
                     <DividerWithSpace/>
 
-                    <DetailsSection widthDesktop={60} imageOnTheLeft={false} section={simpleSections.smartContractControlledMultisigs} presentedItems={{
+                    {/* <DetailsSection widthDesktop={60} imageOnTheLeft={false} section={simpleSections.smartContractControlledMultisigs} presentedItems={{
                         0: <Image width={'100%'} src="drawings/multisig.svg"/>
                     }}/>
-                    <DividerWithSpace/>
+                    <DividerWithSpace/> */}
 
                                         
                     <Heading as='h1' size='3xl' padding={{ base: '0 0 0 25px', lg: 'unset' }} id="scalability">Scalability</Heading>
